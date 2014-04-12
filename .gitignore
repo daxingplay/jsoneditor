@@ -2,3 +2,6 @@
 build
 downloads
 node_modules
+*.iws
+*.ipr
+*.iml
