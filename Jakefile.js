@@ -20,7 +20,7 @@ var JSONEDITOR = './jsoneditor.js',
  * default task
  */
 desc('Execute all tasks');
-task('default', ['clear', 'build', 'minify', 'zip', 'webapp', 'chromeapp'], function () {
+task('default', ['clear', 'build', 'minify', 'webapp'], function () {
   console.log('Done');
 });
 
@@ -232,7 +232,7 @@ task('webapp', ['build', 'minify'], function () {
   jake.cpR(webAppSrc + 'index.html', webApp);
   jake.cpR(webAppSrc + 'favicon.ico', webApp);
   jake.cpR(webAppSrc + 'fileretriever.php', webApp);
-  jake.cpR(webAppSrc + 'googlea47c4a0b36d11021.html', webApp);
+//  jake.cpR(webAppSrc + 'googlea47c4a0b36d11021.html', webApp);
   jake.cpR(webAppSrc + 'img/logo.png', webAppImg);
   jake.cpR(webAppSrc + 'img/header_background.png', webAppImg);
   jake.cpR(webAppSrc + 'doc/', webApp);
